@@ -4,10 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="logo">
+                <div class="header__logo">
+                    <a href="#">
+                        <img src="images/home/logo.png" alt="Логотип">
+                    </a>
+                </div>
+            </div>
+            <nav class="header__menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item"><a class="menu__list-link active" href="#">HOME</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#">About</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#">Portfolio</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#">BLOG</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+ </header>  <!--header -->
+<section class="slider">
+    <div class="container-fluid">
+        <div class="slider__inner">
+
+            <div class="slider__inner-items ibg">
+                <div class="slider__info">
+                    <img class="images__slider" src="images/home/slide/base-1.jpg" alt="">
+                    <div class="slider__title">Lian Creative Agency</div>
+                    <div class="slider__subtitle">Minimal Freelance Portfolio</div>
+                </div>
+            </div> <!--slider__inner-items -->
+
+            <div class="slider__inner-items ibg">
+                <div class="slider__info">
+                    <img class="images__slider" src="images/home/slide/base-1.jpg" alt="">
+                    <div class="slider__title">About The Agency</div>
+                    <div class="slider__subtitle">Welcome to Lian</div>
+                </div>
+            </div> <!--slider__inner-items -->
+
+            <div class="slider__inner-items ibg">
+                <div class="slider__info">
+                    <img class="images__slider" src="images/home/slide/base-1.jpg" alt="">
+                    <div class="slider__title">LATEST PROJECTS</div>
+                    <div class="slider__subtitle">We Deliver Quality</div>
+                </div>
+            </div> <!--slider__inner-items -->
+
+        </div>
+    </div>
+</section> <!--slider -->
+
+<section class="products">
+    <div class="container">
+        <div class="products__inner">
+
+            <div class="products__inner-sort">
+                <button class="products__inner-btn" type="button" data-filter="all">All</button>
+                <button class="products__inner-btn" type="button" data-filter=".category-a">Logo</button>
+                <button class="products__inner-btn" type="button" data-filter=".category-b">Mobile</button>
+                <button class="products__inner-btn" type="button" data-filter=".category-c">App</button>
+                <button class="products__inner-btn" type="button" data-filter=".category-d">WordPress</button>
+                <button class="products__inner-btn" type="button" data-filter=".category-i">Web Design</button>
+                <button class="products__inner-btn" type="button" data-filter=".category-f">UI/IX</button>
+                <button class="products__inner-btn" type="button" data-filter=".category-g">Branding</button>
+            </div> <!--products__inner-btn -->
+            <div class="products__box">
+
+                <div class="products__box-inner">
+                    <figure class="products__items mix category-a" data-order="1">
+                        <img src="images/home/sort/01.jpg" alt="Dummy Image" class="masonry-content">
+                    </figure>
+                    <figure class="products__items mix category-b" data-order="1">
+                        <img src="images/home/sort/04.jpg" alt="Dummy Image" class="masonry-content">
+                    </figure>
+                    <figure class="products__items mix category-f" data-order="1">
+                        <img src="images/home/sort/07.jpg" alt="Dummy Image" class="masonry-content">
+                    </figure>
+                    <figure class="products__items mix category-c" data-order="1">
+                        <img src="images/home/sort/02.jpg" alt="Dummy Image" class="masonry-content">
+                    </figure>
+                    <figure class="products__items mix category-i" data-order="1">
+                        <img src="images/home/sort/05.jpg" alt="Dummy Image" class="masonry-content">
+                    </figure>
+                    <figure class="products__items mix category-d" data-order="1">
+                        <img src="images/home/sort/08.jpg" alt="Dummy Image" class="masonry-content">
+                    </figure>
+                    <figure class="products__items mix category-b" data-order="1">
+                        <img src="images/home/sort/10.jpg" alt="Dummy Image" class="masonry-content">
+                    </figure>
+                    <figure class="products__items mix category-g" data-order="1">
+                        <img src="images/home/sort/03.jpg" alt="Dummy Image" class="masonry-content">
+                    </figure>
+                    <figure class="products__items mix category-a" data-order="1">
+                        <img src="images/home/sort/06.jpg" alt="Dummy Image" class="masonry-content">
+                    </figure>
+                    <figure class="products__items mix category-f" data-order="1">
+                        <img src="images/home/sort/09.jpg" alt="Dummy Image" class="masonry-content">
+                    </figure>
+
+                </div> <!--products__box-inner -->
+                <button class="products__items-btn">Load More</button>
+            </div> <!--products__box -->
+        </div>
+    </div>
+</section> <!--products -->
+<footer class="footer">
+   
+        <div class="footer__wrapper">
+            <div class="footer__logo">
+                <img src="images/home/logo.png" alt="">
+            </div>
+            <div class="footer__social">
+                <ul class="footer__social-inner">
+                    <li class="footer__social-item"><a class="footer__social-link" href="#"></a></li>
+                    <li class="footer__social-item"><a class="footer__social-link" href="#"></a></li>
+                    <li class="footer__social-item"><a class="footer__social-link" href="#"></a></li>
+                    <li class="footer__social-item"><a class="footer__social-link" href="#"></a></li>
+                    <li class="footer__social-item"><a class="footer__social-link" href="#"></a></li>
+                    <li class="footer__social-item"><a class="footer__social-link" href="#"></a></li>
+                    <li class="footer__social-item"><a class="footer__social-link" href="#"></a></li>
+                </ul>
+            </div>
+            <div class="footer_copyright">© 2016 <a href="#">Mulitix Theme</a>  by ThemeForces. All Rights Reserved.</div>
+        </div>
+    
+</footer> <!--footer -->
+
+
+
+
+
+
+
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>  

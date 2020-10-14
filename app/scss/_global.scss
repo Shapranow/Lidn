@@ -38,14 +38,23 @@ li{
     list-style: none;
 }
 body{
-    font-family: 'Roboto-Regular', sans-serif;
-    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
     line-height: 24px;
     font-weight: 400;
     color: $text;
 }
+
+figure{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 .container{
-    max-width: 1200px;
+    max-width: 1150px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -55,9 +64,9 @@ body{
     padding: 0 30px;
 }
 
-@media (max-width: 720px) {
+@media (min-width: 1150px) {
     .container-fluid{
-        padding: 0 15px;
+        padding: 0 0;
     }
 }
 .title{
@@ -114,6 +123,14 @@ body{
         left: 0;
         color: $green;
         font-size: 14px;
+    }
+}
+.ibg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    img{
+        display: none;
     }
 }
 #modal{

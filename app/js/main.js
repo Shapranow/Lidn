@@ -56,25 +56,25 @@ $(function () {
     // burgerMenu('.burger__menu');
 
 
-    const menu = document.querySelector("svg");
-    menu.addEventListener("click", morph);
+    // const menu = document.querySelector("svg");
+    // menu.addEventListener("click", morph);
 
-    function morph() {
-        menu.classList.toggle("open");
-    }
+    // function morph() {
+    //     menu.classList.toggle("open");
+    // }
 
     // ============== slick ========================================
-    $('.reviews__items').slick({
-        dots: false,
-        arrows: false,
-        infinite: true,
+    $('.slider__inner').slick({
+        dots: true,
+        infinite: false,
+        // infinite: true,
         speed: 1000,
-        // fade: true,
+        // // fade: true,
         cssEase: 'linear',
         // autoplay: true,
-        // autoplaySpeed: 2000,
+        autoplaySpeed: 2000,
     });
     // ============== mixitup ========================================
-    var mixer = mixitup('.projects__content-box');
+    var mixer = mixitup('.products__inner');
 
 });
