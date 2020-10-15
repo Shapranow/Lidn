@@ -1,5 +1,10 @@
 $(function () {
 
+    // ============== menu ========================================
+    $(".header__burger").on("click", function (event) {
+        $('.header__burger, .header__menu').toggleClass('active');
+        $('body').toggleClass('lock');
+    });
 
     // ============== bg ========================================
     function ibg() {
@@ -14,19 +19,19 @@ $(function () {
     ibg();
 
     // ============== skroll ========================================
-    $('a[href^="#"]').click(function () {
-        var target = $(this).attr('href');
-        $('html, body').animate({
-            scrollTop: $(target).offset().top
-        }, 800);
-    });
+    // $('a[href^="#"]').click(function () {
+    //     var target = $(this).attr('href');
+    //     $('html, body').animate({
+    //         scrollTop: $(target).offset().top
+    //     }, 1150);
+    // });
     // ============== projects ========================================
-    $(' .projects__all').on('click', function () {
-        $('.projects__content-box').addClass('projects__all');
-        $('.projects__category').on('click', function () {
-            $('.projects__content-box').removeClass('projects__all');
-        });
-    });
+    // $(' .projects__all').on('click', function () {
+    //     $('.projects__content-box').addClass('projects__all');
+    //     $('.projects__category').on('click', function () {
+    //         $('.projects__content-box').removeClass('projects__all');
+    //     });
+    // });
     // ============== menu ========================================
 
 
@@ -54,14 +59,19 @@ $(function () {
     //     }
     // }
     // burgerMenu('.burger__menu');
-
-
     // const menu = document.querySelector("svg");
     // menu.addEventListener("click", morph);
 
     // function morph() {
     //     menu.classList.toggle("open");
     // }
+
+
+
+
+
+
+
 
     // ============== slick ========================================
     $('.slider__inner').slick({
@@ -76,5 +86,13 @@ $(function () {
     });
     // ============== mixitup ========================================
     var mixer = mixitup('.products__inner');
-
+    var mixer = mixitup(containerEl);
+    var mixer = mixitup(containerEl, {
+        selectors: {
+            target: '.products__items'
+        },
+        animation: {
+            duration: 900
+        }
+    });
 });

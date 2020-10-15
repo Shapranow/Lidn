@@ -37,8 +37,97 @@
 }
 
 // ====================== start 790px =====================
-@media (max-width: 790px){
-   
+@media (max-width: 767px){
+    body.lock{
+        overflow: hidden;
+    }
+    .header{
+        position: fixed;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            z-index: 199;
+        }
+    }
+
+    .header__inner{
+        height: 50px;
+    }
+    .header__logo{
+        max-width: 100px;
+    }
+   .header__burger{
+       display: block;
+       position: relative;
+       width: 30px;
+       height: 20px;
+       z-index: 200;
+       span{
+           position: absolute;
+           background-color: #000;
+           width: 100%;
+           height: 2px;
+           left: 0;
+           top: 9px;
+           transition: all 0.3s ease 0s;
+       }
+       &::before,
+       &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            background-color: #000;
+            height: 2px;
+            left: 0;
+            transition: all 0.3s ease 0s;
+       }
+       &::before{
+            top: 0;
+       }
+       &::after{
+           bottom: 0;
+       }
+   }
+   .header__burger.active::before{
+        transform: rotate(45deg);
+        top: 9px;
+   }
+   .header__burger.active::after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+   }
+   .header__burger.active{
+       span{
+           transform: scale(0);
+       }
+   }
+   .header__menu{
+       overflow: auto;
+       position: fixed;
+       top: -100%;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color: #fff;
+       padding: 70px 0 0 0;
+       transition: all 0.3s ease 0s;
+   }
+   .header__menu.active{
+    top: 0;
+   }
+   .menu__list{
+       display: block;
+       text-align: center;
+       &-item{
+           margin: 0 0 20px 0;
+       }
+   }
+
 }
 
 // ====================== start 740px =====================

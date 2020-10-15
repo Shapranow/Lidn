@@ -10,7 +10,7 @@ html,
 body {
     height: 100%;
     position: relative;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 .wrapper {
 	display: flex;
@@ -43,6 +43,8 @@ body{
     line-height: 24px;
     font-weight: 400;
     color: $text;
+
+    
 }
 
 figure{
