@@ -1,10 +1,20 @@
 $(function () {
 
+ 
+
+
+
     // ============== menu ========================================
     $(".header__burger").on("click", function (event) {
         $('.header__burger, .header__menu').toggleClass('active');
         $('body').toggleClass('lock');
     });
+
+
+
+
+
+
 
     // ============== bg ========================================
     function ibg() {
@@ -66,9 +76,11 @@ $(function () {
     //     menu.classList.toggle("open");
     // }
 
+    
 
-
-
+    $(".product-page__wish-button").on("click", function (event) {
+        $('.product-page__wish-button').toggleClass('active');
+    });
 
 
 
@@ -85,7 +97,7 @@ $(function () {
         autoplaySpeed: 2000,
     });
     // ============== mixitup ========================================
-    var mixer = mixitup('.products__inner');
+    var mixer = mixitup('.products__inner, .product-page__inner');
     var mixer = mixitup(containerEl);
     var mixer = mixitup(containerEl, {
         selectors: {
