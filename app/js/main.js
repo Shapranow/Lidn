@@ -82,19 +82,42 @@ $(function () {
         $('.product-page__wish-button').toggleClass('active');
     });
 
-
-
-
     // ============== slick ========================================
     $('.slider__inner').slick({
         dots: true,
         infinite: false,
-        // infinite: true,
         speed: 1000,
-        // // fade: true,
         cssEase: 'linear',
-        // autoplay: true,
         autoplaySpeed: 2000,
+    });
+    $('.slider-active').slick({
+        slidesToShow: 1,
+        dots: false,
+        arrows: true,
+        appendArrows: $('.portfolio__details-nav__arrow'),
+        fade: true,
+        infinite: false,
+        swipe:false,
+        draggable:false,
+        // cssEase: 'linear',
+        touchMove:false,
+        swipeToSlide:false,
+    });
+    $('.portfolio__details-slider__for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.portfolio__details-slider__nav',
+    });
+
+    $('.portfolio__details-slider__nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.portfolio__details-slider__for',
+        dots: false,
+        arrows: false,
+        focusOnSelect: true,
     });
     // ============== mixitup ========================================
     var mixer = mixitup('.products__inner, .product-page__inner');
