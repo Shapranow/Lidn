@@ -66,6 +66,11 @@ figure{
     margin: 0 auto;
     padding: 0 30px;
 }
+.post__container{
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
 
 @media (min-width: 1150px) {
     .container-fluid{

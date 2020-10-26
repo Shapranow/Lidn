@@ -1352,7 +1352,291 @@
     }
 }
 // ====================== end portfolio__details-tutorial =====================
-// ====================== start footer ==================
+// ====================== start contacts ==================
+
+.contacts{
+    background-color: #fafafa;
+}
+.contacts__box{
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.contacts__info{
+    max-width: 370px;
+    width: 100%;
+    &-title{
+        font-size: 30px;
+        color: $activetext;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 7px;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 15px;
+    }
+    &-text{
+        font-size: 16px;
+        color: #2f302f;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        position: relative;
+        padding-bottom: 16px;
+        margin-bottom: 40px;
+        &::after{
+            position: absolute;
+            content: "";
+            height: 1px;
+            width: 60px;
+            background-color: #000;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    &-adres{
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        margin-bottom: 30px;
+        span{
+            color: #222222;
+            margin-right: 8px;
+            font-weight: 700;
+        }
+    }
+    &-tell,
+    &-fax{
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        margin-bottom: 8px;
+        span{
+            color: #222222;
+            margin-right: 8px;
+        }
+        a{
+            color: #555555;
+        }
+    }    
+}
+.contacts__form,
+.post__form-wrapper{
+    width: 100%;
+    padding-left: 20px;
+    textarea{
+        width: 100%;
+        display: block;
+        min-height: 150px;
+        padding-left: 17px;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 15px;
+        font-style: italic;
+        color: #bababa;
+        border: solid 1px #ebebeb;
+        background-color: #fafafa;
+        resize: none;
+        margin-bottom: 30px;
+    }
+    button{
+        padding: 12px 50px;
+        background-color: #000;
+        border: none;
+        border-radius: 2px;
+        display: block;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        cursor: pointer;
+    }
+}
+.contacts__form-row,
+.post__form-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    input{
+        max-width: 360px;
+        width: 100%;
+        height: 40px;
+        padding: 0 17px;
+        font-size: 15px;
+        color: #bababa;
+        border: solid 1px #ebebeb;
+        background-color: #fafafa;
+        font-style: italic;
+        outline: none;
+        & + input{
+            margin-left: 45px;
+        }
+    }
+}
+.contacts__map{
+    iframe{
+        width: 100%;
+        height: 360px;
+        filter: grayscale(100%);
+        .place-card.place-card-large{
+            text-align: center;
+        } 
+    }
+}
+// ====================== end contacts ==================
+// ====================== start advantages ==================
+.advantages{
+    padding: 60px 0;
+    background-color: #fafafa;
+    box-shadow: 0px 15px 8px -12px #dbdbdb;
+    &__content{
+        max-width: 610px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__title{
+        font-size: 30px;
+        letter-spacing: 4px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        color: #000;
+        text-transform: uppercase;
+        margin-bottom: 35px;
+    }
+    &__text{
+        margin-bottom: 60px;
+    }
+}
+.advantages__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.advantages__item{
+    max-width: 355px;
+    width: 100%;
+    &-photo{
+        height: 250px;
+        margin-bottom: 25px;
+    }
+    &-title{
+        margin-bottom: 40px;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        color: #000;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    &-text{
+        padding: 0 10px 0 0;
+    }
+}
+// ====================== end advantages ==================
+// ====================== start post ====================
+.post{
+    background-color: #fafafa;
+    padding: 60px 0px;
+    &__title{
+        font-size: 30px;
+        line-height: 39px;
+        color: $activetext;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    &__date{
+        display: flex;
+        justify-content: space-between;
+        max-width: 430px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        &-items{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #777777;
+        }
+    }
+    &__images{
+        width: 100%;
+        height: 480px;
+        margin-bottom: 50px;
+    }
+    &__blockquote{
+        margin: 30px 0px 40px;
+        padding: 23px 30px 30px 40px;
+        border: solid 1px #e1e1e1;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        color: #5c5c5c;
+        font-size: 15px;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            left: -0;
+            top: -0;
+            height: 100%;
+            width: 4px;
+            background-color: #c8c8c8;
+        }
+    }
+    &__content{
+        max-width: 860px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+        &-title{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #000;
+            font-size: 16px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+        &-text{
+            margin-bottom: 50px;
+            & + .post__content-text{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+// ====================== end post ========================
+// ====================== start post__form ====================
+.post__form{
+    background-color: #fafafa;
+    box-shadow: 0px 15px 8px -12px #dbdbdb;
+    padding-bottom: 60px;
+    &-wrapper{
+        padding-left: 0;
+    } 
+    &-title{
+        text-align: center;
+        font-size: 20px;
+        color: #000;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding-top: 20px;
+        margin-bottom: 50px;
+    }
+}
+.post__form-wrapper{
+    button{
+        margin: 0 auto;
+    }
+    
+}
+.post__container{
+    max-width: 950px;
+    width: 100%;
+    margin: 0 auto;
+}
+// ====================== end post__form ========================
+// ====================== start footer ====================
 .footer__wrapper{
     text-align: center;
     padding: 60px 0px 40px;
